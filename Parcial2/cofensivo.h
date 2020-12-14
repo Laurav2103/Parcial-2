@@ -18,9 +18,12 @@ private:
     float ang[3]={};
     float vel[3]={};
 
+    float ecu_estudiante(float A,float B,float C);
 public:
     cOfensivo();
     void disparosOf(float Xd,float Yd);
+    void destructor(float Xd, float Yd, float angleD, float Vd);
+
     void imprimir(float angle, float V0, float x, float y, float t);
 
 
