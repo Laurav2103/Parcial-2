@@ -21,6 +21,7 @@ public:
     cDefensivo();
     void disparosDef(float Xo,float Yo);
     void disparoDef2(float Yo,float Xd,float Yd,int anglei, int V2ini);
+    void disparodef3(float Yo, float Xd, float Yd, int anglei, int V2ini);
 
 
     float getXd() const;

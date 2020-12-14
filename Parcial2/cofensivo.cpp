@@ -35,7 +35,7 @@ void cOfensivo::disparosOf(float Xd, float Yd)
             }
          }
      }
-    if (col!=3)cout<<" ";
+    if (col!=3)cout<<"No se lograron disparos ofensivos efectivos ";
 
 }
 void cOfensivo::imprimir(float angle, float V0, float x, float y, float t)

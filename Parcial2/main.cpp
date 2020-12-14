@@ -56,6 +56,15 @@ int main()
             cin>>angleO;
             disDefensivo.disparoDef2(Yo,d,Yd,angleO,VinO);
             break;
+         case 4:
+            cout<<"PUNTO 4: Dado un disparo ofensivo, generar (al menos tres) disparo defensivos que impidan que los cañones defensivo y ofensivo puedan ser destruidos."<<endl;
+            cout<<"Ingrese los datos dados por el espia"<<endl;
+            cout<<"Velocidad incial de la bala ofensiva(m/s):";
+            cin>>VinO;
+            cout<<"Angulo de la bala ofensiva(grados): ";
+            cin>>angleO;
+            disDefensivo.disparodef3(Yo,d,Yd,angleO,VinO);
+         break;
         }
 
     }
