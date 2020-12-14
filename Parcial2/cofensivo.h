@@ -20,6 +20,7 @@ private:
 public:
     cOfensivo();
     void disparosOf(float Xd,float Yd,int Vin);
+    void imprimir(float angle, float V0, float x, float y, float t);
 
 
     float getD() const;

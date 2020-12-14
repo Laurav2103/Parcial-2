@@ -5,10 +5,46 @@ cOfensivo::cOfensivo()
 {
 
 }
+void  cOfensivo::setD0(float value)
+{
+    d0 = value;
+}
 float cOfensivo::getD0() const
 {
     return d0;
 }
+float  cOfensivo::getD() const
+{
+    return d;
+}
+
+void  cOfensivo::setD(float value)
+{
+    d = value;
+}
+
+float  cOfensivo::getXo() const
+{
+    return Xo;
+}
+
+void  cOfensivo::setXo(float value)
+{
+    Xo = value;
+}
+
+float  cOfensivo::getYo() const
+{
+    return Yo;
+}
+
+void  cOfensivo::setYo(float value)
+{
+    Yo = value;
+}
+
+
+
 void cOfensivo::disparosOf(float Xd, float Yd, int Vin)
 {
     int col=0;
@@ -31,7 +67,7 @@ void cOfensivo::disparosOf(float Xd, float Yd, int Vin)
                     if(y<0) y=0;
                     ang[col]=angle;
                     vel[col]=V0;
-                   // ImprimirDatos(angle,V0,x,y,t);
+                    imprimir(angle,V0,x,y,t);
                     col+=1;
                     V0+=30;
                     break;
@@ -44,7 +80,15 @@ void cOfensivo::disparosOf(float Xd, float Yd, int Vin)
     }
     if (col!=3)cout<<" ";
 
-
+}
+void cOfensivo::imprimir(float angle, float V0, float x, float y, float t)
+{
+    cout<<endl;
+    cout<<"El impacto se produce con un angulo de: "<<angle<<" grados"<<endl;
+    cout<<"El impacto se produce con una velocidad incial: "<<V0<<" m/s"<<endl;
+    cout<<"Posicion respectiva en X: "<<x <<" m"<<endl;
+    cout<<"Posicion respectiva en Y: "<<y <<" m"<<endl;
+    cout<<"En un tiempo de: "<<t<<" s"<<endl<<endl;
 }
 
 
