@@ -11,12 +11,14 @@ void cDefensivo::disparosDef(float Xo, float Yo, int Vin)
     int col=0,V0=0,t=0;
     float x=0,y=0,Vxin,Vyin;
     int angle=0;
-    for (V0=Vin;V0<=500;V0+=5){
-        for (angle=0;angle<90;angle++){
-            for (t=0;;t++){
-                 //Ecuaciones cinematicas
-                Vxin=V0*cos((angle)*pi/180);
-                Vyin=V0*sin((angle)*pi/180);
+    for (V0=Vin;V0<=500 && col!=3;V0+=5){
+        for (angle=0;angle<90 && col!=3;angle++){
+            //Ecuaciones cinematicas
+           Vxin=V0*cos((angle)*pi/180);
+           Vyin=V0*sin((angle)*pi/180);
+
+           for (t=0;;t++){
+
                 x=Xd-Vxin*t;
                 y=Yd+ Vyin*t-(0.5*G*t*t);
                 //Condicion de impacto sobre el ofensivo
@@ -29,9 +31,9 @@ void cDefensivo::disparosDef(float Xo, float Yo, int Vin)
                 }
                 if(y<0)break;
             }
-            if (col==3) break;
+
         }
-        if (col==3) break;
+
     }
     if (col!=3) cout<<"No hubo impacto sobre el canion Ofensivo"<<endl;
 

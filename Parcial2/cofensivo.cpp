@@ -5,45 +5,7 @@ cOfensivo::cOfensivo()
 {
 
 }
-float cOfensivo::getD0() const
-{
-    return d0;
-}
-float  cOfensivo::getD() const
-{
-    return d;
-}
 
-void  cOfensivo::setD(float value)
-{
-    d = value;
-}
-
-float  cOfensivo::getXo() const
-{
-    return Xo;
-}
-
-void  cOfensivo::setXo(float value)
-{
-    Xo = value;
-}
-
-float  cOfensivo::getYo() const
-{
-    return Yo;
-}
-
-void  cOfensivo::setYo(float value)
-{
-    Yo = value;
-}
-
-
-void  cOfensivo::setD0(float value)
-{
-    d0 = value;
-}
 void cOfensivo::disparosOf(float Xd, float Yd, int Vin)
 {
     int col=0;
@@ -89,4 +51,44 @@ void cOfensivo::imprimir(float angle, float V0, float x, float y, float t)
     cout<<"En un tiempo de: "<<t<<" s"<<endl<<endl;
 }
 
+
+float cOfensivo::getD0() const
+{
+    return d0;
+}
+float  cOfensivo::getD() const
+{
+    return d;
+}
+
+void  cOfensivo::setD(float value)
+{
+    d = value;
+}
+
+float  cOfensivo::getXo() const
+{
+    return Xo;
+}
+
+void  cOfensivo::setXo(float value)
+{
+    Xo = value;
+}
+
+float  cOfensivo::getYo() const
+{
+    return Yo;
+}
+
+void  cOfensivo::setYo(float value)
+{
+    Yo = value;
+}
+
+
+void  cOfensivo::setD0(float value)
+{
+    d0 = value;
+}
 

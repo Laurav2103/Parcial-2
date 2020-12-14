@@ -11,21 +11,21 @@ int main()
 
     float Vin,d,Yo,Yd,VinO,angleO;
     int a;
-
-    cout<<"Ingrese condiciones iniciales"<<endl;
-    cout<<"Altura del Ofensivo (m): ";
+    cout<<"PARCIAL 2. INFORMATICA II:"<<endl<<endl<<endl;
+    cout<<"Para poder iniciar la simulacion, debe ingresar las condiciones iniciales del entorno"<<endl<<endl;
+    cout<<"Ingrese:"<<endl;
+    cout<<"Altura Ho del ca"<<char(164)<<"on Ofensivo en metros: ";
     cin>>Yo;
-    disOfensivo.setYo(Yo);
-    cout<<"Separacion de los caniones (m): ";
+    cout<<"Separacion en metros de los ca"<<char(164)<<"ones ofensivo y defensivo: ";
     cin>>d;
+    cout<<"Altura Hd del ca"<<char(164)<<"on Defensivo en metros: ";
+    cin>>Yd;
+    disOfensivo.setYo(Yo);
+    disDefensivo.setYd(Yd);
     disOfensivo.setD(d);
     disDefensivo.setXd(d);
     disOfensivo.setD0(0.05*d);
     disDefensivo.setDd(0.025*d);
-    cout<<"Altura del Defensivo (m): ";
-    cin>>Yd;
-    disDefensivo.setYd(Yd);
-
 
 
 
