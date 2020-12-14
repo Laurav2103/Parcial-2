@@ -1,6 +1,8 @@
 #ifndef COFENSIVO_H
 #define COFENSIVO_H
-
+#include <math.h>
+#include <iostream>
+using namespace std;
 
 class cOfensivo
 {
@@ -12,9 +14,12 @@ private:
 
     float pi=3.1416;
     float G=9.81;
+    // vectores donde se guardaran los angulos y velocidades que cumplan
+    float ang[3]={};
+    float vel[3]={};
 public:
     cOfensivo();
-    void disparosOfensivos(float Xd,float Yd,int Vini);
+    void disparosOf(float Xd,float Yd,int Vin);
 
 
     float getD() const;

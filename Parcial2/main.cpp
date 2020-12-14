@@ -1,5 +1,6 @@
 #include <iostream>
-
+#include "cofensivo.h"
+#include "cdefensivo.h"
 using namespace std;
 
 int main()

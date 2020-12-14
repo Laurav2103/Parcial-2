@@ -1,7 +1,8 @@
 #ifndef CDEFENSIVO_H
 #define CDEFENSIVO_H
-
-
+#include <math.h>
+#include <iostream>
+using namespace std;
 class cDefensivo
 {
 private:
@@ -15,7 +16,7 @@ private:
 
 public:
     cDefensivo();
-    void disparosDefensivos(float Xo,float Yo,int Vini);
+    void disparosDef(float Xo,float Yo,int Vin);
 
     float getD() const;
     void setD(float value);
