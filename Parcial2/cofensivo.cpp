@@ -85,30 +85,21 @@ float cOfensivo::getD0() const
 {
     return d0;
 }
-float  cOfensivo::getD() const
-{
-    return d;
-}
+
 
 void  cOfensivo::setD(float value)
 {
     d = value;
 }
 
-float  cOfensivo::getXo() const
-{
-    return Xo;
-}
+
 
 void  cOfensivo::setXo(float value)
 {
     Xo = value;
 }
 
-float  cOfensivo::getYo() const
-{
-    return Yo;
-}
+
 
 void  cOfensivo::setYo(float value)
 {

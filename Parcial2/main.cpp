@@ -28,7 +28,7 @@ int main()
     dispOfensivo.setYo(Yo);
     dispDefensivo.setYd(Yd);
     dispOfensivo.setD(d);
-    dispDefensivo.setXd(d);
+    //dispDefensivo.setXd(d);
     dispOfensivo.setD0(0.05*d);
     dispDefensivo.setDd(0.025*d);
 

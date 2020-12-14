@@ -115,19 +115,11 @@ float cDefensivo::normaE(float x1, float x2, float y1, float y2)
     return sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
 }
 
-float cDefensivo::getXd() const
-{
-      return Xd;
-}
+
 
 void cDefensivo::setXd(float value)
 {
     Xd = value;
-}
-
-float cDefensivo::getYd() const
-{
-    return Yd;
 }
 
 void cDefensivo::setYd(float value)
@@ -144,10 +136,7 @@ void cDefensivo::setDd(float value)
 {
      dd = value;
 }
-float cDefensivo::getD() const
-{
-     return d;
-}
+
 
 void cDefensivo::setD(float value)
 {
