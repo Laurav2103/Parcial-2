@@ -17,15 +17,16 @@ private:
 public:
     cDefensivo();
     void disparosDef(float Xo,float Yo,int Vin);
+    void imprimir(float angle,float V0,float x,float y,float t);
 
-    float getD() const;
-    void setD(float value);
     float getXd() const;
     void setXd(float value);
     float getYd() const;
     void setYd(float value);
     float getDd() const;
     void setDd(float value);
+    float getD() const;
+    void setD(float value);
 
 
 };

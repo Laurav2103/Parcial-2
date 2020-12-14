@@ -18,10 +18,14 @@ int main()
     disOfensivo.setYo(Yo);
     cout<<"Separacion de los caniones (m): ";
     cin>>d;
+    disOfensivo.setD(d);
+    disDefensivo.setXd(d);
+    disOfensivo.setD0(0.05*d);
+    disDefensivo.setDd(0.025*d);
     cout<<"Altura del Defensivo (m): ";
     cin>>Yd;
-    disOfensivo.setD(d);
-    disOfensivo.setD0(0.05*d);
+    disDefensivo.setYd(Yd);
+
 
 
 
@@ -37,6 +41,10 @@ int main()
          case 1:
             cout<<"El disparo ofensivo sera efectivo con los siguientes parametros"<<endl;
             disOfensivo.disparosOf(d,Yd,Vin);
+         break;
+         case 2:
+            cout<<"El disparo defensivo sera efectivo con los siguientes parametros"<<endl;
+            disDefensivo.disparosDef(0,Yo,Vin);
          break;
         }
 
