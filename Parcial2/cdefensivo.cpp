@@ -100,6 +100,7 @@ void cDefensivo::disparodef3(float Yo, float Xd, float Yd, int angle, int V2in)
 
 }
 
+
 void cDefensivo::imprimir(float angle, float V0, float x, float y, float t)
 {
     cout<<endl;
@@ -109,6 +110,10 @@ void cDefensivo::imprimir(float angle, float V0, float x, float y, float t)
     cout<<"Tiempo de impacto: "<<t<<" s"<<endl<<endl;
 }
 
+float cDefensivo::normaE(float x1, float x2, float y1, float y2)
+{
+    return sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+}
 
 float cDefensivo::getXd() const
 {
@@ -148,7 +153,4 @@ void cDefensivo::setD(float value)
 {
      d = value;
 }
-float cDefensivo::normaE(float x1, float x2, float y1, float y2)
-{
-    return sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
-}
+

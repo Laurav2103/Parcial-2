@@ -57,7 +57,17 @@ void cOfensivo::destructor(float Xd, float Yd, float angleD, float Vd)
     B=2*(K2*M2-K1*M1);
     C=K1*K1+K2*K2-R*R;
     t1=ecu_estudiante(A,B,C);//Para calcular el momento en el cual la bala defensiva destruye la ofensiva
-
+    if(t1>=3){ //3 segundos de retraso en total
+        for(int col=1;col<4;col++){
+            t=3+((t1-3)/(4.0))*col;
+            alphaO=atan((Yd-Yo+vely*(t-2)+G*0.5*(5-2*t))/(Xd-velx*(t-2)));
+            Vo=(Xd-velx*(t-2))/((t-3)*cos(alphaO));
+            x=Vo*cos(alphaO)*(t-3);
+            y=Yo +Vo*sin(alphaO)*(t-3)-(0.5*G*(t-3)*(t-3));
+            imprimir(alphaO*180/pi,Vo,x,y,t);
+         }
+    }
+    else cout<<"No es posible defender la bala ofensiva"<<endl;
 
 
 }

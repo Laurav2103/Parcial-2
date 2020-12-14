@@ -7,10 +7,13 @@ class cDefensivo
 {
 private:
 
-    float d=0;
+    //parametros del cañon defensivo
+
+
     float Xd=d; //pos inicial en x del cañon def
     float Yd=0; // pos inicial en y
     float dd=0.025*d; // rango de destruccion
+    float d=0;
     float pi=3.1416;
     float G=9.81;
 
@@ -19,6 +22,7 @@ private:
 
 public:
     cDefensivo();
+
     void disparosDef(float Xo,float Yo);
     void disparoDef2(float Yo,float Xd,float Yd,int anglei, int V2ini);
     void disparodef3(float Yo, float Xd, float Yd, int anglei, int V2ini);
