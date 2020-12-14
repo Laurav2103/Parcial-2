@@ -14,10 +14,14 @@ private:
     float pi=3.1416;
     float G=9.81;
 
+    float normaE(float x1, float x2, float y1, float y2);
+    void imprimir(float angle,float V0,float x,float y,float t);
+
 public:
     cDefensivo();
-    void disparosDef(float Xo,float Yo,int Vin);
-    void imprimir(float angle,float V0,float x,float y,float t);
+    void disparosDef(float Xo,float Yo);
+    void disparoDef2(float Yo,float Xd,float Yd,int anglei, int V2ini);
+
 
     float getXd() const;
     void setXd(float value);

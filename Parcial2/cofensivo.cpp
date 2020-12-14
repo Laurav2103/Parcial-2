@@ -6,16 +6,15 @@ cOfensivo::cOfensivo()
 
 }
 
-void cOfensivo::disparosOf(float Xd, float Yd, int Vin)
+void cOfensivo::disparosOf(float Xd, float Yd)
 {
     int col=0;
     float x=0, y=0;
     float Vxin,Vyin;
-    int V0=0;
-    int t=0;
-    int angle=0;
-    for (V0=Vin;V0<=500;V0+=5){
-        for (angle=0;angle<90;angle++){
+    int V0=0,t=0,Vin=5,angle=0;
+
+    for (V0=Vin;V0<=400 && col!=3;V0+=4){
+        for (angle=0;angle<90 && col!=3;angle++){
             for (t=0;;t++){
                 //Ecuaciones cinematicas
                 Vxin=V0*cos(angle*pi/180);
@@ -34,21 +33,18 @@ void cOfensivo::disparosOf(float Xd, float Yd, int Vin)
                 }
                 if(y<0)break;
             }
-            if (col==3) break;
-        }
-        if (col==3) break;
-    }
+         }
+     }
     if (col!=3)cout<<" ";
 
 }
 void cOfensivo::imprimir(float angle, float V0, float x, float y, float t)
 {
     cout<<endl;
-    cout<<"El impacto se produce con un angulo de: "<<angle<<" grados"<<endl;
+    cout<<"El angulo de disparo con el que debe salir la bala es de: "<<angle<<" grados"<<endl;
     cout<<"El impacto se produce con una velocidad incial: "<<V0<<" m/s"<<endl;
-    cout<<"Posicion respectiva en X: "<<x <<" m"<<endl;
-    cout<<"Posicion respectiva en Y: "<<y <<" m"<<endl;
-    cout<<"En un tiempo de: "<<t<<" s"<<endl<<endl;
+    cout<<"Posicion del impacto (X,Y)= ("<<x <<','<<y<<")."<<endl;
+    cout<<"Tiempo de impacto: "<<t<<" s"<<endl<<endl;
 }
 
 
@@ -91,4 +87,5 @@ void  cOfensivo::setD0(float value)
 {
     d0 = value;
 }
+
 
